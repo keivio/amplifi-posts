@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border: 0px none #ffffff;
+}
+
+::-webkit-scrollbar-track {
+  background: #575757;
+  border: 0px none #ffffff;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.feed-container {
+  display: flex;
+  justify-content: center;
+
+  background: #302F4B;
+  background: -webkit-linear-gradient(top left, #302F4B, #8A858F);
+  background: -moz-linear-gradient(top left, #302F4B, #8A858F);
+  background: linear-gradient(to bottom right, #302F4B, #8A858F);
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  padding: 1em 1em;
+  width: 100vw;
+  padding: 1rem 4rem;
+}
+
+.icon-comment {
+  cursor: pointer;
+  margin-right: .5em;
+}
+
+.comments-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: .9rem;
+  font-weight: bolder;
+}
+
+.post-comment-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.post-comment-container__user {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.post-comment-container__user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.post-comment-container__user-info > span{
+  font-size: .7rem;
+}
+
+.b-avatar {
+  margin-right: .5em;
+}
+
+.card-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
